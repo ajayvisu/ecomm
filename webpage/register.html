@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce app</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+    }
+    .bgimage{
+        width: 200vh;
+        background-position: center;
+        background-size: cover;
+        height: 120vh;
+        z-index: -1;
+        position: absolute;
+    }
+    .logo{
+        position: sticky;
+        padding-left: 40px;
+        padding-top: 20px;
+        font-family: Verdana;
+        font-style: italic;
+        font-size: xx-large;
+        color: rgb(255, 33, 33);
+        font-weight: bolder;
+        font-size: 250%;
+        text-shadow: 8px 8px 10px rgba(33, 32, 32, 0.2);
+        text-emphasis-color: red;
+        
+    }
+    .menu{
+        padding-left: 400px;
+    }
+    ul{
+        float: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        list-style-type: none;
+    }
+    ul :hover{
+        color: rgb(25, 191, 224);
+    }
+    ul li{
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .heading{
+        padding-left: 40px;
+        padding-top: 150px;
+        font-weight: bolder;
+        font-size: 300%;
+        font-family: 'Lucida Sans';
+        line-height: 150%
+    }
+    .para{
+        padding-left: 40px;
+        padding-top: 10px;
+        font-weight:lighter;
+        font-size: 150%;
+        font-style: italic;
+        font-family: 'Lucida Sans';
+        text-align: left;
+        line-height: 150%;
+    }
+    .frame{
+        background-image: url();
+        width: 350px;
+        height: 550px;
+        background: linear-gradient(to right, rgb(5, 245, 245), rgb(217, 10, 10));
+        box-shadow: 70px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2%;
+        border-left: 2px solid rgba(255,255,255,.3);
+        border-top: 4px solid rgba(255,255,255,.3);
+        position: absolute;
+        top: 90px;
+        left: 1050px;
+        margin: auto;
+        padding: 30px;
+        opacity: 70%;
+    }
+    .frame h2{
+        text-align: center;
+        text-shadow: 3px 4px 5px #05352a33;
+        font-family: Arial;
+        color: white;
+        letter-spacing: 1px;
+        text-emphasis: 2px;
+        margin-bottom: 7%;
+    }
+    .frame label{
+        display: flex;
+        font-weight:lighter;
+        font-size: 16px;
+        font-style:italic;
+        font-family: Arial;
+        margin-left: 4%;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    }
+    .frame input{
+        width: 310px;
+        height: 35px;
+        margin-bottom: 4%;
+        margin-right: 2%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        border-bottom: 1px solid;
+        margin-left: 5%;
+    }
+    .frame .buttn{
+        margin-left: 30%;
+        height: 10%; 
+        margin-bottom: 5%;
+        width: 35%; 
+        border: none;
+        letter-spacing: 4px; 
+        outline: none;
+        border-radius: 5px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+        text-align: center;
+        font-size: 90%;
+        margin-top: 5%;
+        flex: row;
+    }
+    .frame a{
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+        font-weight: bold; 
+    }
+    .copy{
+        padding-left: 600px;
+        font-size: larger;
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 23%;
+    }
+    
+    </style>
+    
+</head>
+<body>
+    <img class="bgimage" src="imagebg.jpg" alt="">
+
+    <div class="main">
+         
+            <div>
+                <h2 class="logo">yourCart.com</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li><a href="about.html">About</a></li>
+                    <li>Products</li>
+                    <li>Cart</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="heading">Shopping Made Simple</h1>
+                <p class="para">An online shopping portal designed to make <br>
+                     your shoppping as simple as you like...</p>
+                </div>
+            <div class="frame">
+                <form action="/api/users/register" method="POST">
+                    
+                    <h2>Register</h2>
+                   
+                    <label for="username">username</label>
+                    <input type="text" id="username">
+                    <label for="email">eMail</label>
+                    <input type="email" id="email">
+                    <label for="mobileNo">mobileNo</label>
+                    <input type="number" id="mobileNo">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    
+                    <div class="buttn">
+                        <button type="submit">submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                    <a href="home.html">back to home page</a>
+                </form>
+            </div>
+            <p class="copy">&copy; yourCart.com</p>
+    </div>
+
+
+
+   

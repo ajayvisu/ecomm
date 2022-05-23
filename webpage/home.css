@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.main{
+    width: 200vh;
+    background: url(imagebg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+.logo{
+    position: sticky;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: xx-large;
+    color: rgb(255, 33, 33);
+    font-weight: bolder;
+    font-size: 250%;
+    text-shadow: 8px 8px 10px rgba(33, 32, 32, 0.2);
+    text-emphasis-color: red;
+}
+.menu{
+    padding-left: 400px;
+}
+ul{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    list-style-type: none;
+}
+ul :hover{
+    color: rgb(25, 191, 224);
+}
+ul li{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.heading{
+    padding-left: 40px;
+    padding-top: 150px;
+    font-weight: bolder;
+    font-size: 300%;
+    font-family: 'Lucida Sans';
+    line-height: 150%
+}
+.para{
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight:lighter;
+    font-size: 150%;
+    font-style: italic;
+    font-family: 'Lucida Sans';
+    text-align: left;
+    line-height: 150%;
+}
+.frame{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to right, rgb(5, 245, 245), rgb(217, 10, 10));
+    box-shadow: 70px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 4px solid rgba(255,255,255,.3);
+    position: absolute;
+    top: 80px;
+    left: 1150px;
+    padding: 30px;
+    opacity: 70%;
+}
+.frame h2{
+    text-align: center;
+    text-shadow: 3px 4px 5px #05352a33;
+    font-family: Arial;
+    color: white;
+    letter-spacing: 1px;
+    text-emphasis: 2px;
+    margin-bottom: 7%;
+}
+.frame label{
+    font-weight:lighter;
+    font-size: 16px;
+    font-style:italic;
+    font-family: Arial;
+    margin-left: 1%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+.frame input{
+    width: 240px;
+    height: 35px;
+    margin-bottom: 4%;
+    margin-left: 1%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid ;
+}
+.frame button{
+    margin-left: 30%;
+    height: 10%; 
+    margin-bottom: 5%;
+    width: 35%; 
+    border: none;
+    letter-spacing: 1px; 
+    outline: none;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    text-align: center;
+    font-size: 90%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.frame a{
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;   
+}
+.frame .social .sociallogo{
+    z-index: 1;
+
+}
+img{
+    padding-left: 1150px;
+    width: 310px;    
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.copy{
+    padding-left: 600px;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15%;
+}
